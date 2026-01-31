@@ -39,8 +39,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
           >
-            Empower your children with authentic Islamic education alongside their regular schooling. 
-            Build strong moral foundations and Quranic knowledge for a blessed future.
+            Authentic Islamic education alongside regular schooling. 
+            Build strong foundations for this life and the hereafter.
           </motion.p>
 
           <motion.div

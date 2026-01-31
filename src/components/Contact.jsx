@@ -60,8 +60,7 @@ const Contact = () => {
         >
           <h2>Get In Touch</h2>
           <p>
-            Have questions about our programs? Interested in enrolling? 
-            We're here to help guide you on your journey of Islamic knowledge.
+            Questions? Reach out - we're happy to help.
           </p>
         </motion.div>
 
@@ -73,10 +72,9 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Contact Information</h3>
+            <h3>Contact Us</h3>
             <p className="contact-intro">
-              We welcome students from all backgrounds and levels. Feel free to reach 
-              out for inquiries about courses, admissions, or general information.
+              Feel free to reach out for any inquiries.
             </p>
 
             <div className="contact-details">
@@ -100,13 +98,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="visit-note">
-              <h4>Visit Us</h4>
-              <p>
-                You're welcome to visit our Madarsa during office hours. We recommend 
-                calling ahead to schedule a tour and meet with our staff.
-              </p>
-            </div>
+            
           </motion.div>
 
           <motion.div
@@ -151,6 +143,14 @@ const Contact = () => {
               >
                 Send Message
               </motion.button>
+
+              <div className="visit-note">
+              <h4>Visit Us</h4>
+              <p>
+                You're welcome to visit our Madarsa during office hours. We recommend 
+                calling ahead to schedule a tour and meet with our staff.
+              </p>
+            </div>
             </form>
           </motion.div>
         </div>

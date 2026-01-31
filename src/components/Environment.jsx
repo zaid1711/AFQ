@@ -7,27 +7,27 @@ const Environment = () => {
   const schedule = [
     {
       icon: <FaSun />,
-      time: 'Morning Shift',
+      time: 'Morning',
       title: '6:00 AM - 8:00 AM',
-      activities: ['Fajr prayer & Quran recitation', 'Tajweed & memorization', 'Perfect before school hours']
+      activities: ['Fajr prayer & Quran', 'Tajweed & memorization']
     },
     {
       icon: <FaClock />,
       time: 'After School',
       title: '4:00 PM - 6:00 PM',
-      activities: ['Islamic studies & Fiqh', 'Arabic language basics', 'Hadith & character building']
+      activities: ['Islamic studies', 'Arabic basics']
     },
     {
       icon: <FaMoon />,
-      time: 'Evening Classes',
+      time: 'Evening',
       title: '6:30 PM - 8:00 PM',
-      activities: ['Advanced Quran studies', 'Islamic history & Seerah', 'Weekend intensive programs']
+      activities: ['Advanced Quran', 'Islamic history']
     },
     {
       icon: <FaUsers />,
-      time: 'Weekend Program',
-      title: 'Saturday & Sunday',
-      activities: ['Full-day Islamic education', 'Community activities', 'Parent-child workshops']
+      time: 'Weekend',
+      title: 'Sat & Sun',
+      activities: ['Full-day programs', 'Community activities']
     }
   ]
 
@@ -42,10 +42,9 @@ const Environment = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2>Flexible Class Schedule</h2>
+          <h2>Class Schedule</h2>
           <p>
-            Convenient timings designed for working families. Give your children authentic Islamic 
-            education alongside their regular schooling, building strong moral foundations for life.
+            Flexible timings for working families. Choose what works best for you.
           </p>
         </motion.div>
 
@@ -57,7 +56,7 @@ const Environment = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Class Timings for Your Child</h3>
+            <h3>Available Timings</h3>
             <div className="schedule-timeline">
               {schedule.map((item, index) => (
                 <motion.div

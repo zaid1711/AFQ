@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaBook, FaLanguage, FaPrayingHands, FaHistory, FaChild, FaUserGraduate } from 'react-icons/fa'
+import { FaBook, FaLanguage, FaPrayingHands, FaUserGraduate } from 'react-icons/fa'
 import './Courses.css'
 
 const Courses = () => {
@@ -10,42 +10,28 @@ const Courses = () => {
       title: 'Quran Memorization (Hifz)',
       level: 'Ages 7+',
       duration: 'Flexible Pace',
-      description: 'Help your child become a Hafiz/Hafiza with our proven memorization program. Builds discipline and confidence.'
+      description: 'Become a Hafiz/Hafiza with our proven memorization program.'
     },
     {
       icon: <FaPrayingHands />,
       title: 'Tajweed & Recitation',
       level: 'All Ages',
       duration: '6-12 Months',
-      description: 'Your child will learn to recite Quran beautifully with correct pronunciation, making you proud in every gathering.'
+      description: 'Learn beautiful Quran recitation with correct pronunciation.'
     },
     {
       icon: <FaLanguage />,
-      title: 'Arabic Language Basics',
+      title: 'Arabic Language',
       level: 'Ages 8+',
       duration: '1 Year',
-      description: 'Give your child the key to understanding Quran and Islamic texts directly - a lifelong valuable skill.'
+      description: 'Understand Quran and Islamic texts directly.'
     },
     {
       icon: <FaUserGraduate />,
       title: 'Islamic Studies',
       level: 'Ages 10+',
       duration: 'Ongoing',
-      description: 'Comprehensive Islamic knowledge - prayers, fiqh, and life lessons that shape your child\'s character.'
-    },
-    {
-      icon: <FaHistory />,
-      title: 'Stories of Prophets',
-      level: 'Ages 7-14',
-      duration: '6 Months',
-      description: 'Inspiring stories that teach moral values and strengthen your child\'s connection with Islam.'
-    },
-    {
-      icon: <FaChild />,
-      title: 'Weekend Islamic School',
-      level: 'Ages 5-15',
-      duration: 'Ongoing',
-      description: 'Perfect for busy families - complete Islamic education in convenient weekend classes with community activities.'
+      description: 'Complete Islamic knowledge - prayers, fiqh & life lessons.'
     }
   ]
 
@@ -79,10 +65,9 @@ const Courses = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2>Programs for Your Child</h2>
+          <h2>Our Programs</h2>
           <p>
-            Choose from our range of Islamic education programs, all designed to fit 
-            around your child's school schedule and build a strong Islamic foundation.
+            Islamic education programs designed around your child's school schedule.
           </p>
         </motion.div>
 
@@ -124,8 +109,8 @@ const Courses = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h3>Ready to Begin Your Islamic Journey?</h3>
-          <p>Join our community of dedicated learners seeking authentic Islamic knowledge</p>
+          <h3>Ready to Begin?</h3>
+          <p>Join our community of learners</p>
           <a href="#contact" className="btn btn-primary">Enroll Now</a>
         </motion.div>
       </div>

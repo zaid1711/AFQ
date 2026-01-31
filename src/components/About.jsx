@@ -8,22 +8,22 @@ const About = () => {
     {
       icon: <FaQuran />,
       title: 'Quran Mastery',
-      description: 'Your child will learn proper Quran recitation, memorization, and understanding with certified teachers.'
+      description: 'Proper recitation, memorization & understanding with certified teachers.'
     },
     {
       icon: <FaPray />,
       title: 'Strong Values',
-      description: 'Build character and Islamic ethics that guide your child to make right choices in life.'
+      description: 'Character building and Islamic ethics for life.'
     },
     {
       icon: <FaUsers />,
       title: 'Safe Environment',
-      description: 'A supervised, positive community where your child learns with like-minded Muslim families.'
+      description: 'Positive community with like-minded Muslim families.'
     },
     {
       icon: <FaGraduationCap />,
       title: 'Flexible Timings',
-      description: 'Classes designed around school schedules - mornings, evenings, and weekends available.'
+      description: 'Morning, evening & weekend classes available.'
     }
   ]
 
@@ -57,10 +57,9 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2>Why Choose Our Islamic Education Program</h2>
+          <h2>Why Choose Us</h2>
           <p>
-            Give your children the gift of authentic Islamic knowledge while they excel in their regular studies. 
-            We make Islamic education accessible, convenient, and impactful for modern families.
+            Give your children the gift of Islamic knowledge while they excel in regular studies.
           </p>
         </motion.div>
 
@@ -72,22 +71,10 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3>Building Your Child's Islamic Foundation</h3>
+            <h3>Building Strong Islamic Foundations</h3>
             <p>
-              As parents, you want the best for your children - both in this world and the hereafter. 
-              Our flexible day classes ensure your child receives authentic Islamic education without 
-              compromising their regular schooling or family time.
-            </p>
-            <p>
-              We understand modern family schedules. That's why we offer morning, after-school, and 
-              weekend programs designed to fit seamlessly into your busy lives. Your children learn 
-              Quran, Islamic studies, and moral values from qualified scholars in a safe, nurturing 
-              environment.
-            </p>
-            <p>
-              Watch your child grow into a confident, practicing Muslim who understands their faith, 
-              respects Islamic values, and makes you proud. Our structured curriculum ensures steady 
-              progress that you can see and celebrate together as a family.
+              We offer flexible morning, after-school, and weekend programs that fit your busy family life. 
+              Your children learn Quran, Islamic studies, and values from qualified scholars in a nurturing environment.
             </p>
 
             <div className="about-quote">

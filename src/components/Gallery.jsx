@@ -5,34 +5,24 @@ import './Gallery.css'
 const Gallery = () => {
   const galleryItems = [
     {
-      title: 'Students in Prayer',
-      description: 'Our students performing congregational prayers together',
+      title: 'Prayer Hall',
+      description: 'Congregational prayers together',
       color: 'linear-gradient(135deg, #1a5f3f, #2d7b7b)'
     },
     {
       title: 'Quran Classes',
-      description: 'Learning the beautiful recitation of the Holy Quran',
+      description: 'Learning beautiful recitation',
       color: 'linear-gradient(135deg, #2d7b7b, #8b9d83)'
     },
     {
       title: 'Arabic Lessons',
-      description: 'Interactive Arabic language learning sessions',
+      description: 'Interactive language learning',
       color: 'linear-gradient(135deg, #8b9d83, #1a5f3f)'
     },
     {
-      title: 'Islamic Studies',
-      description: 'Deep discussions on Islamic theology and jurisprudence',
+      title: 'Graduation',
+      description: 'Celebrating our Huffaz',
       color: 'linear-gradient(135deg, #1a5f3f, #2d7b7b)'
-    },
-    {
-      title: 'Library Time',
-      description: 'Students exploring our rich collection of Islamic texts',
-      color: 'linear-gradient(135deg, #2d7b7b, #1a5f3f)'
-    },
-    {
-      title: 'Graduation Day',
-      description: 'Celebrating the achievements of our Huffaz graduates',
-      color: 'linear-gradient(135deg, #8b9d83, #2d7b7b)'
     }
   ]
 
@@ -49,8 +39,7 @@ const Gallery = () => {
         >
           <h2>Life at Our Madarsa</h2>
           <p>
-            Glimpses of our vibrant learning community, spiritual gatherings, 
-            and the daily journey of seeking knowledge.
+            Glimpses of our learning community and daily journey.
           </p>
         </motion.div>
 
@@ -84,8 +73,7 @@ const Gallery = () => {
         >
           <p className="note-text">
             <span className="note-icon">📸</span>
-            In accordance with Islamic principles of modesty and privacy, we maintain 
-            limited photography. These representations showcase the spirit of our learning environment.
+            Representations showcasing the spirit of our learning environment.
           </p>
         </motion.div>
       </div>
