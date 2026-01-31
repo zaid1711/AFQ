@@ -1,0 +1,105 @@
+.about {
+  background: var(--white);
+  position: relative;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-text p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.9;
+}
+
+.about-quote {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--sand), var(--cream));
+  border-left: 4px solid var(--primary-gold);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: var(--primary-gold);
+  opacity: 0.2;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-family: serif;
+}
+
+.quote-text {
+  font-family: var(--font-arabic);
+  font-size: 1.25rem;
+  color: var(--dark-text);
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.quote-attribution {
+  font-size: 0.95rem;
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.feature-card {
+  padding: var(--spacing-md);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-card h4 {
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+  }
+}

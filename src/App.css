@@ -1,0 +1,218 @@
+.app {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Loading Screen */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a5f3f 0%, #0d8f6f 50%, #1a5f3f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loader-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(13, 143, 111, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 30%);
+}
+
+.loader-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.loader-icon {
+  font-size: 5rem;
+  color: var(--primary-gold);
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 10px 30px rgba(212, 175, 55, 0.4));
+}
+
+.bismillah {
+  font-family: var(--font-arabic);
+  font-size: 3rem;
+  color: var(--primary-gold);
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  text-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.loader-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/* Geometric Pattern Background */
+.pattern-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, var(--primary-green) 35px, var(--primary-green) 70px),
+    repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--primary-green) 35px, var(--primary-green) 70px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Islamic Geometric Pattern */
+.islamic-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a5f3f' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-gold), var(--primary-green));
+  border-radius: 2px;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: var(--spacing-md);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-green), var(--accent-teal));
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+
+.btn-outline:hover {
+  background: var(--primary-green);
+  color: var(--white);
+}
+
+/* Card Styles */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-gold), var(--primary-green));
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .bismillah {
+    font-size: 1.8rem;
+  }
+  
+  .btn {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .bismillah {
+    font-size: 1.5rem;
+  }
+}

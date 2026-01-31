@@ -1,0 +1,202 @@
+.environment {
+  background: var(--white);
+  position: relative;
+}
+
+.environment-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.schedule-full-width {
+  width: 100%;
+}
+
+.schedule-section h3,
+.facilities-section h3 {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.schedule-timeline {
+  position: relative;
+}
+
+.schedule-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary-gold), var(--primary-green));
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.timeline-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-green), var(--accent-teal));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-md);
+  z-index: 1;
+}
+
+.timeline-content {
+  flex: 1;
+  background: var(--sand);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--primary-gold);
+}
+
+.timeline-time {
+  font-size: 0.9rem;
+  color: var(--primary-gold);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-activities {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-activities li {
+  color: var(--light-text);
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline-activities li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-gold);
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.facility-card {
+  padding: var(--spacing-md);
+}
+
+.facility-card h4 {
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+.facility-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.environment-values {
+  background: linear-gradient(135deg, var(--cream), var(--sand));
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-top: 3px solid var(--primary-gold);
+}
+
+.environment-values h4 {
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0.75rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+}
+
+.value-icon {
+  font-size: 1.5rem;
+  color: var(--primary-gold);
+}
+
+.value-item span {
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .environment-content {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-section h3,
+  .facilities-section h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .schedule-timeline::before {
+    left: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .schedule-timeline::before {
+    display: none;
+  }
+
+  .timeline-icon {
+    margin: 0 auto;
+  }
+
+  .timeline-content {
+    border-left: none;
+    border-top: 3px solid var(--primary-gold);
+  }
+}
